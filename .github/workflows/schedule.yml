@@ -1,0 +1,23 @@
+name: FX Trading Signal
+
+on:
+  schedule:
+    - cron: '0 23 * * *'   # 08:00 JST (毎日)
+    - cron: '0 3 * * *'    # 12:00 JST (毎日)
+    - cron: '0 7 * * *'    # 16:00 JST (毎日)
+    - cron: '0 12 * * *'   # 21:00 JST (毎日)
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Run FX Trading Signal
+        run: python fx_trading_complete.py
