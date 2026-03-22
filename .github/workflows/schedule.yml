@@ -2,7 +2,7 @@ name: FX Trading Signal
 
 on:
   schedule:
-    - cron: '0 23 * * *'   # 08:00 JST (毎日)
+    - cron: '0 1 * * *'   # 10:00 JST (毎日)
     - cron: '0 3 * * *'    # 12:00 JST (毎日)
     - cron: '0 7 * * *'    # 16:00 JST (毎日)
     - cron: '0 12 * * *'   # 21:00 JST (毎日)
