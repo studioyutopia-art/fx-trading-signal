@@ -847,8 +847,8 @@ def main():
     """メイン実行"""
     
     # Gmail 設定（オプション）
-    gmail_address = perfectearthtn@gmail.com
-    gmail_password = cmes mqar mtys eppt
+    gmail_address = "perfectearthtn@gmail.com"
+    gmail_password = "cmes mqar mtys eppt"
 
     
     # メール通知を有効にする場合は、ここに設定してください
